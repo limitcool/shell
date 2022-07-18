@@ -6,3 +6,5 @@ apt install gcc -y
 apt install tmux -y
 apt install ffmpeg -y
 pip install yt-dlp
+wget https://raw.githubusercontent.com/limitcool/shell/master/bash/nohup.sh
+chmod u+x nohup.sh
