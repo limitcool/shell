@@ -14,12 +14,12 @@ while true
 do 
     # -f 后跟进程名,判断进程是否正在运行
     if [ `pgrep -f bupload | wc -l` -eq 0 ];then
-        echo "进程已终止"
+        echo "app is down"
         # push
         # /dev/null 无输出日志
         nohup ./bupload > /dev/null 2>&1 &
     else
-        echo "进程正在运行"
+        echo "up"
     fi
     # 每隔1分钟检查一次
     sleep 1m
